@@ -133,6 +133,8 @@ def capturar_processos():
 
 
 #execucao principal
+
+
 if __name__ == "__main__":
     try:
         processos_usuario = capturar_processos()
