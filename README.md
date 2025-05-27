@@ -22,7 +22,7 @@
    # - O código trata exceções como `ValueError` e `EOFError`.
    # - Impede entradas inválidas como tempos negativos, duração zero e nomes repetidos.
 
- # O projeto foi totalmente escrito em Python, sem bibliotecas externas, com foco em lógica, clareza e simulação fiel do algoritmo SRTF.
+ # O projeto foi totalmente escrito em C, sem bibliotecas externas, com foco em lógica, clareza e simulação fiel do algoritmo SRTF.
  # Feito por Ana, Ludimila, Iago e Gabriel
 
 def escalonador_srtf(processos):
