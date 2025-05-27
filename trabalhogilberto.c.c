@@ -15,7 +15,7 @@ typedef struct {
     int retorno;
 } Processo;
 
-// Função para comparar nomes manualmente
+
 int nomes_iguais(char a[], char b[]) {
     for (int i = 0; i < nome_max; i++) {
         if (a[i] != b[i]) return 0;
@@ -24,7 +24,7 @@ int nomes_iguais(char a[], char b[]) {
     return 1;
 }
 
-// Função para copiar nomes manualmente
+
 void copiar_nome(char destino[], char origem[]) {
     int i = 0;
     while (origem[i] != '\0' && i < nome_max - 1) {
@@ -34,7 +34,7 @@ void copiar_nome(char destino[], char origem[]) {
     destino[i] = '\0';
 }
 
-// Ordena os processos por tempo de chegada (bubble sort simples)
+
 void ordenar_por_chegada(Processo processos[], int n) {
     for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
@@ -158,7 +158,7 @@ int capturar_processos(Processo processos[]) {
                 processos[i].chegada < 0 || processos[i].duracao <= 0 ||
                 processos[i].chegada > tempo_limite || processos[i].duracao > tempo_limite) {
                 printf("  Valores inválidos. Reinsira.\n");
-                while (getchar() != '\n'); // limpar buffer
+                while (getchar() != '\n'); 
             } else {
                 break;
             }
